@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress tests</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 data-cy="mainHeader">Cypress tests</h1>        
+    </header>
+    <main>
+        <section>
+            <div class="line orange"></div>
+            <div class="line violet"></div>
+            <div class="line orange"></div>
+            <div class="line violet"></div>
+            <div class="line orange"></div>
+            <div class="line violet"></div>
+            <div class="line orange"></div>
+            <div class="line violet"></div>
+            <div class="line orange"></div>
+            <div class="line violet"></div>
+        </section>
+        <form>
+            <div>
+                <input type="radio" name="language" id="php" value="PHP">
+                <label for="php">PHP</label>
+                <input type="radio" name="language" id="python" value="Python">
+                <label for="python">Python</label>
+                <input type="radio" name="language" id="node" value="Node.js">
+                <label for="node">Node.js</label>
+            </div>
+            <div>
+                <input type="checkbox" id="react" value="React">
+                <label for="react">React</label>
+                <input type="checkbox" id="angular" value="Angular">
+                <label for="angular">Angular</label>
+                <input type="checkbox" id="vue" value="Vue">
+                <label for="vue">Vue</label>
+            </div>
+            <button id="btnShowText">Show text</button>
+        </form>
+        <section>
+            <div id="text"></div>
+            <div id="moreText" class="dblClickedDiv" data-source="mySource"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Arturo Mora-Rioja</p>
+    </footer>
+</body>
+</html>

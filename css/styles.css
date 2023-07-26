@@ -1,0 +1,37 @@
+:root {
+    --colorMain: black;
+    --colorBackground: rgb(255, 248, 252);
+    --colorBgOrange: orange;
+    --colorBgViolet: violet;
+
+    --lineElementHeight: 10px;
+}
+
+section > div {
+    display: none;
+    width: fit-content;
+    padding: 0.5rem;    
+    border: thin solid var(--colorMain);
+    border-radius: 0.4rem;
+    background-color: var(--colorBackground);
+}
+
+section:first-of-type {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+}
+section > div.line {
+    display: inline-block;
+    flex: 1 1 auto;
+    height: var(--lineElementHeight);
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+section > div.orange {
+    background-color: var(--colorBgOrange);
+}
+section > div.violet {
+    background-color: var(--colorBgViolet);
+}
