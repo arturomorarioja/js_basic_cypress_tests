@@ -82,12 +82,12 @@ describe('template spec', () => {
         const apiCall = new myAPI;
 
         cy.stub(apiCall, 'getSchool')
-            .onFirstCall().returns('KEA')
-            .onSecondCall().returns('CPHBusiness')
+            .onFirstCall().returns('EK')
+            .onSecondCall().returns('DTU')
             .onThirdCall().returns('ITU');
 
-        expect(apiCall.getSchool()).to.equal('KEA');
-        expect(apiCall.getSchool()).to.equal('CPHBusiness');
+        expect(apiCall.getSchool()).to.equal('EK');
+        expect(apiCall.getSchool()).to.equal('DTU');
         expect(apiCall.getSchool()).to.equal('ITU');
 
         // Simulation of a service being down
